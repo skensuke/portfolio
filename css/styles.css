@@ -1,0 +1,174 @@
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #333;
+}
+img {
+  width: 100%;
+}
+header {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 64px;
+  background-image: url("img/top.jpg");
+}
+/* 
+header img {
+  width: 280px;
+  vertical-align: bottom;
+} */
+header .pic {
+  background-image: url("img/top.jpg");
+}
+
+.btn {
+  text-decoration: none;
+  background: #fff;
+  color: #000;
+  display: block;
+  width: 140px;
+  line-height: 44px;
+  margin: 40px auto 48px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+.portforio {
+  padding-top: 24px;
+  width: 100%;
+  vertical-align: bottom;
+}
+.portforio  h2 {
+  text-align: center;
+  /* padding: px 0; */
+  font-weight: normal;
+}
+.portforio p {
+  line-height: 1.8;
+}
+.portforio img {
+  vertical-align: bottom;
+}
+.portforio section {
+  padding-bottom: 64px;
+}
+.portforio .container {
+  margin: 0 32px;
+  padding-bottom: 16px;
+}
+.portforio .flex-container2 {
+  margin: 8px 0;
+}
+.portforio .NextHouseLab a {
+  text-decoration: none;
+  color: #000;
+}
+.portforio .NextHouseLab {
+  background-color: #eee;
+}
+.portforio .link {
+  display: block;
+}
+.portforio .abeho {
+  background: #e5c1ac;
+}
+.portforio .jphacks {
+  background: #eee;
+}
+.portforio .blackwhite{
+  background-color: #d9d465;
+  /* background-color: #b7b18d; */
+}
+
+
+.friends {
+  background: #eee;
+  padding-top: 24px;
+}
+/* .members .container3 {
+  width: 800px;
+  margin: auto;
+} */
+.friends h3 {
+  text-align: center;
+  font-weight: normal;
+}
+.friends ul {
+  text-align: center;
+}
+.friends img {
+  width: 160px;
+  border-radius: 50%;
+}
+.friends h3 {
+  font-size: 20px;
+}
+.friends li {
+  margin-top: 8px;
+  padding-bottom: 24px;
+}
+
+
+footer {
+  padding: 24px 0;
+  background: #323135;
+  color: #98969c;
+  text-align: center;
+  font-weight: normal;
+}
+
+@media (min-width: 900px) {
+  .flex-container {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  }
+  header .info {
+    width: 50%;
+    align-self: center;
+  }
+  header .pic {
+    width: 50%;
+  }
+
+ .portforio .container {
+   width: 800px;
+   margin: 0 auto;
+ }
+ .portforio .flex-container2 {
+   display: flex;
+   justify-content: space-between;
+ }
+ .portforio .pic {
+   width: 50%;
+ }
+ .portforio .info {
+   width: 50%;
+ }
+ .portforio .info {
+   padding: 16px;
+ }
+ .portforio .reverse {
+  flex-direction: row-reverse;
+ }
+
+ .friends ul {
+   width: 800px;
+   margin: 0 auto;
+   display: flex;
+   list-style: none;
+   justify-content: space-between;
+ }
+ .friends li {
+   width: 250px;
+ }
+ .friends .container3 {
+  width: 800px;
+  margin: auto;
+ }
+}
