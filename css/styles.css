@@ -279,7 +279,7 @@
   }
   
 
-
+/* ここから実装 */
 body {
   font-size: 16px;
   font-family: sans-serif;
@@ -288,34 +288,104 @@ body {
 img {
   width: 100%;
 }
-header {
-  background: #000;
-  color: #fff;
+
+/* ハンバーガーメニュー */
+.menuButton {
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  z-index: 3;
+}
+.menuButton div {
+  height: 1px;
+  width: 30px;
+  background: #666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  transition: 0.4s;  
+}
+.menuButton div:nth-of-type(1) {
+  transform: translate(-50% , -10px);
+}
+.menuButton div:nth-of-type(3) {
+  transform: translate(-50% , 10px);
+}
+/* クリックした後の挙動 */
+.menuButton.active div {
+  background: #fff;
+}
+.menuButton.active {
+  transform: rotate(180deg);
+}
+.menuButton.active div:nth-of-type(1) {
+  transform: rotate(45deg) translate(-50% , 0);
+  transform-origin: 0% 50%;
+}
+.menuButton.active div:nth-of-type(2) {
+  opacity: 0;
+}
+.menuButton.active div:nth-of-type(3) {
+  transform: rotate(-45deg) translate(-50% , 0);
+  transform-origin: 0% 50%;
+}
+nav {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba( 60, 60, 60, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+nav div {
+  padding-top: 110px;
   text-align: center;
-  padding-top: 64px;
-  background-image: url("img/top.jpg");
+}
+nav ul {
+  margin: 0 auto;
+  width: 20%;
+  text-align: left;
+}
+nav li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+nav.active {
+  opacity: 2;
+  visibility: visible;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-header .pic img {
+/* アイキャッチ */
+.top {
+  background: #000;
+  background-image: url("img/top.jpg");
+  color: #fff;
+  font-size: 22px;
+  padding-top: 64px;
+  text-align: center;
+}
+.top p {
+  font-size: 16px;
+}
+
+.top .pic img {
   vertical-align: bottom;
 }
 
-.btn {
-  text-decoration: none;
-  background: #fff;
-  color: #000;
-  display: block;
-  width: 140px;
-  line-height: 44px;
-  margin: 40px auto 48px;
-  font-size: 14px;
-  border-radius: 4px;
-}
-.btn:hover {
-  opacity: 0.9;
-}
-
-
+/* WORK */
 .portforio {
   padding-top: 24px;
   width: 100%;
@@ -363,6 +433,7 @@ header .pic img {
 }
 
 
+/* FRIENDS */
 .friends {
   background: #eee;
   padding-top: 24px;
@@ -389,6 +460,8 @@ header .pic img {
   padding: 16px;
 }
 
+
+/* Footer */
 footer {
   padding: 24px 0;
   background: #323135;
@@ -398,16 +471,26 @@ footer {
 }
 
 @media (min-width: 900px) {
+  .nav {
+    width: 800px;
+    /* margin: 0 auto;  */
+  }
+  nav ul {
+    margin: 0 auto;
+    width: 5%;
+    text-align: left;
+  }
+
   .flex-container {
   display: flex;
   width: 800px;
   margin: 0 auto;
   }
-  header .info {
+  .top .info {
     width: 50%;
     align-self: center;
   }
-  header .pic {
+  .top .pic {
     width: 50%;
   }
 
