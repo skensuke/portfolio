@@ -372,6 +372,7 @@ nav a:hover {
   color: #333;
 }
 
+
 /* アイキャッチ */
 .top {
   background: #000;
@@ -419,6 +420,9 @@ nav a:hover {
 .portforio .NextHouseLab a {
   text-decoration: none;
   color: #000;
+}
+.portforio .NextHouseLab a:hover {
+  color: #666;
 }
 .portforio .NextHouseLab {
   background-color: #eee;
@@ -545,6 +549,34 @@ footer {
     width: 5%;
     text-align: left;
   }
+  /* ハンバーガーメニュー */
+.menuButton {
+  display: block;
+  height: 70px;
+  width: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  z-index: 3;
+}
+.menuButton div {
+  height: 1px;
+  width: 50px;
+  background: #666;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  transition: 0.4s;  
+}
+.menuButton div:nth-of-type(1) {
+  transform: translate(-50% , -15px);
+}
+.menuButton div:nth-of-type(3) {
+  transform: translate(-50% , 15px);
+}
+
 
   .flex-container {
   display: flex;
