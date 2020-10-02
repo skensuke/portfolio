@@ -483,10 +483,8 @@ footer {
   height: 1200px;
 }
 .biography .container {
-  width: 60%;
-  position: fixed;
-  top: 0;
-  right: 0;
+  width: 320px;
+  margin: 0 auto;
 }
 .biography  .container ul {
   margin-top: 120px;
@@ -496,6 +494,7 @@ footer {
 }
 .biography li {
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 .biography .listFlex {
   display: flex;
@@ -509,10 +508,8 @@ footer {
   height: 1200px;
 }
 .contact .container {
-  width: 64%;
-  position: fixed;
-  top: 0;
-  right: 0;
+  width: 320px;
+  margin: 0 auto;
 }
 .contact  .container ul {
   margin-top: 120px;
@@ -522,6 +519,7 @@ footer {
 }
 .contact li {
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 .contact .listFlex {
   display: flex;
@@ -536,7 +534,6 @@ footer {
 .contact a:hover {
   color: #666;
 }
-
 
 
 @media (min-width: 900px) {
@@ -578,36 +575,43 @@ footer {
     width: 50%;
   }
 
- .portforio .container {
-   width: 800px;
-   margin: 0 auto;
- }
- .portforio .flex-container2 {
-   display: flex;
-   justify-content: space-between;
- }
- .portforio .pic {
-   width: 50%;
- }
- .portforio .info {
-   width: 50%;
- }
- .portforio .reverse {
-  flex-direction: row-reverse;
- }
+  .portforio .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .portforio .flex-container2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .portforio .pic {
+    width: 50%;
+  }
+  .portforio .info {
+    width: 50%;
+  }
+  .portforio .reverse {
+    flex-direction: row-reverse;
+  }
 
- .friends ul {
-   width: 800px;
-   margin: 0 auto;
-   display: flex;
-   list-style: none;
-   justify-content: space-between;
- }
- .friends li {
-   width: 250px;
- }
- .friends .container3 {
-  width: 800px;
-  margin: auto;
- }
+  .friends ul {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+  .friends li {
+    width: 250px;
+  }
+  .friends .container3 {
+    width: 800px;
+    margin: auto;
+  }
+
+  .biography li {
+      padding-left: 0px;
+  }
+  .contact li {
+      padding-left: 0px;
+  }
 }
