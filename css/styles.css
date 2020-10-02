@@ -289,6 +289,7 @@ img {
   width: 100%;
 }
 
+
 /* ハンバーガーメニュー */
 .menuButton {
   display: block;
@@ -366,6 +367,9 @@ nav.active {
 nav a {
   color: #fff;
   text-decoration: none;
+}
+nav a:hover {
+  color: #333;
 }
 
 /* アイキャッチ */
@@ -469,6 +473,67 @@ footer {
   text-align: center;
   font-weight: normal;
 }
+
+/* biography */
+.biography {
+  height: 1200px;
+}
+.biography .container {
+  width: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.biography  .container ul {
+  margin-top: 120px;
+  color: #000;
+  font-size: 14px;
+  list-style: none;
+}
+.biography li {
+  margin-bottom: 10px;
+}
+.biography .listFlex {
+  display: flex;
+}
+.biography span:nth-of-type(1) {
+  width: 80px;
+}
+
+/* contact */
+.contact {
+  height: 1200px;
+}
+.contact .container {
+  width: 64%;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.contact  .container ul {
+  margin-top: 120px;
+  color: #000;
+  font-size: 14px;
+  list-style: none;
+}
+.contact li {
+  margin-bottom: 10px;
+}
+.contact .listFlex {
+  display: flex;
+}
+.contact span:nth-of-type(1) {
+  width: 80px;
+}
+.contact a {
+  text-decoration: none;
+  color: #000;
+}
+.contact a:hover {
+  color: #666;
+}
+
+
 
 @media (min-width: 900px) {
   .nav {
