@@ -279,7 +279,7 @@
   }
   
 
-
+/* ここから実装 */
 body {
   font-size: 16px;
   font-family: sans-serif;
@@ -289,14 +289,12 @@ img {
   width: 100%;
 }
 
-
+/* ハンバーガーメニュー */
 .menuButton {
   display: block;
   height: 50px;
   width: 50px;
   position: fixed;
-  /* position: relative; */
-  /* background: #000; */
   top: 0;
   left: 0;
   transition: 0.4s;
@@ -370,7 +368,7 @@ nav a {
   text-decoration: none;
 }
 
-
+/* アイキャッチ */
 .top {
   background: #000;
   background-image: url("img/top.jpg");
@@ -387,7 +385,7 @@ nav a {
   vertical-align: bottom;
 }
 
-
+/* WORK */
 .portforio {
   padding-top: 24px;
   width: 100%;
@@ -435,6 +433,7 @@ nav a {
 }
 
 
+/* FRIENDS */
 .friends {
   background: #eee;
   padding-top: 24px;
@@ -461,6 +460,8 @@ nav a {
   padding: 16px;
 }
 
+
+/* Footer */
 footer {
   padding: 24px 0;
   background: #323135;
@@ -470,9 +471,6 @@ footer {
 }
 
 @media (min-width: 900px) {
-  header {
-    margin: 0 auto;
-  }
   .nav {
     width: 800px;
     /* margin: 0 auto;  */
